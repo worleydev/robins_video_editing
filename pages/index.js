@@ -36,7 +36,7 @@ export default function Home() {
           <div className="text-center pt-6 pb-10 px-10">
             <h2 className="text-5xl py-2 text-red-600 font-medium md:text-6xl" >Henry Robins</h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">Video Editor</h3>
-            <p className="text-medium py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-xl mx-auto">Freelancer providing services for video editing. Feel free to take a look at my skills and projects!</p>
+            <p className="text-medium py-5 leading-8 text-gray-800 dark:text-gray-200 md:text-xl max-w-xl mx-auto">Freelancer providing services for video editing. Feel free to take a look at my projects!</p>
           <div className="text-5xl flex justify-center gap-16 py-3 dark:text-gray-400" >
             <Link 
               className="hover:text-red-600 duration-300" 
@@ -52,13 +52,13 @@ export default function Home() {
             </Link>
             <Link 
               className="hover:text-red-600 duration-300"
-              href="mailto: henry.robins@yahoo.com" 
+              href="mailto: henryrobins51@gmail.com" 
               target="_blank">
               <AiFillMail />
             </Link>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-red-500 rounded-md w-80 h-80 mt-8 overflow-hidden md:h-96 md:w-96">
-            <Image src={headhshot} className="text-center" alt="Henry Robins Headshot"/>
+          <div className="relative mx-auto bg-gradient-to-b from-red-500 rounded-md mt-8 overflow-hidden w-58 h-58 tablet:h-96 tablet:w-96">
+            <Image src={headhshot} className="" alt="Henry Robins Headshot"/>
           </div>
           </div>
         </section>
@@ -73,12 +73,12 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <iframe
-                  src="https://www.youtube.com/embed/txFA-p4xjAE"
+                  src="https://www.youtube.com/embed/uC8vTL3wQjw"
                   width={"100%"}
                   height={"350"}
-                  frameborder="0"
+                  frameBorder="0"
                   allow="fullscreen;"
-                  allowfullscreen
+                  allowFullScreen
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -86,19 +86,19 @@ export default function Home() {
                   src="https://www.youtube.com/embed/LEQqxJPPHZc"
                   width={"100%"}
                   height={"350"}
-                  frameborder="0"
+                  frameBorder="0"
                   allow="fullscreen;"
-                  allowfullscreen
+                  allowFullScreen
               />
             </div>
             <div className="basis-1/3 flex-1">
               <iframe
-                  src="https://www.youtube.com/embed/u5P54Kds294"
+                  src="https://www.youtube.com/embed/txFA-p4xjAE"
                   width={"100%"}
                   height={"350"}
-                  frameborder="0"
+                  frameBorder="0"
                   allow="fullscreen;"
-                  allowfullscreen
+                  allowFullScreen
               />
             </div>
             <div className="basis-1/3 flex-1">
@@ -106,9 +106,9 @@ export default function Home() {
                   src="https://www.youtube.com/embed/5iydnKbHQvA"
                   width={"100%"}
                   height={"350"}
-                  frameborder="0"
+                  frameBorder="0"
                   allow="fullscreen; accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; modestbranding; showinfo=0"
-                  allowfullscreen
+                  allowFullScreen
               />
             </div>
           </div>
@@ -120,8 +120,10 @@ export default function Home() {
             <h3 className="text-lg py-2 dark:text-white md:text-xl">I combine excellent client-communication with strong technical and creative skills.</h3>
           </div>
           <div  className="xl:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-900 dark:shadow-2xl flex-1">
-              <Image className="pr-5" src={businessProcess} width={210} height={210}/>
+            <div className="text-center shadow-lg pt-5 p-10 rounded-xl my-10 dark:bg-gray-900 dark:shadow-2xl flex-1">
+              <div className="flex justify-center items-center">
+                <Image className="" src={businessProcess} width={210} height={210} alt="Business Process Emblem"/>
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">CONTRACT PROCESS</h3>
               <p className="py-2 dark:text-white">I approach video editing as a collaborative journey with my clients, ensuring every step is transparent and aligned with their vision. Through open communication and regular updates, I strive to deliver a final product that exceeds expectations and captures your story beautifully.</p>
               <h4 className="py-4 text-red-600">What to Expect</h4>
@@ -135,7 +137,9 @@ export default function Home() {
               </div>
             </div>
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-900 dark:shadow-2xl flex-1">
-                <Image className="dark:text-gray-600" src={videoedit} width={140} height={140}/>
+                <div className="flex justify-center items-center">
+                  <Image className="dark:text-gray-600" src={videoedit} width={140} height={140} alt="Video Editing Emblem"/>
+                </div>
                 <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">STORY BASED EDITING</h3>
                 <p className="py-2 dark:text-white">
                   Captivating the viewer in the first moment, I then weave together visuals, audio, and music to evoke emotion and deepen engagement. By maintaining a cohesive theme and narrative arc, I ensure that every edit serves to propel the story forward, leaving a lasting impact on the viewer.</p>
@@ -143,14 +147,16 @@ export default function Home() {
                 <div className="dark:text-white">  
                 <p className="py-1">Multi-Camera Editing</p>
                 <p>Audio Mixing and Sweetening</p>
-                <p>Color Correction and Grading</p>
+                <p>Color Correction</p>
                 <p>Transitions and Effects</p>
                 <p>Keyframing</p>
                 <p>Collaborative Editing</p>
               </div>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-870 dark:shadow-2xl flex-1">
-              <Image src={adobe} width={100} height={100}/>
+              <div className="flex justify-center items-center">
+                <Image src={adobe} width={100} height={100} alt="Adobe Emblem"/>
+              </div>
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">TECHNICAL KNOWLEDGE</h3>
               <p className="py-2 dark:text-white">With a primary focus on Adobe Premiere Pro and Media Encoder, I ensure seamless production workflows and high-quality output. I leverage these tools for precise editing, efficient media management, and optimized encoding, resulting in polished and professional video content.</p>
               <h4 className="py-4 text-red-600">Technical Skills</h4>
@@ -166,24 +172,24 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="contact" class="bg-white dark:bg-gray-900">
-          <div class="container py-12 mx-auto">
+        <section id="contact" className="bg-white dark:bg-gray-900">
+          <div className="container py-12 mx-auto">
               <div>
                   
-                  <h1 class="mt-2 text-2xl font-semibold text-red-600 md:text-3xl dark:text-red-600">Get in touch</h1>
+                  <h1 className="mt-2 text-2xl font-semibold text-red-600 md:text-3xl dark:text-red-600">Get in touch</h1>
 
                   <h3 className="text-lg py-2 dark:text-white md:text-xl">Let's produce the video you've been dreaming of.</h3>
               </div>
 
-              <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3 dark:text-gray-400">
+              <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3 dark:text-gray-400">
                   <div>
                       <Link 
                           href="https://www.linkedin.com/in/henry-robins-21831a9a/" 
                           target="_blank">
                           <AiFillLinkedin className="text-5xl hover:text-red-600 duration-300" />
                       </Link>
-                      <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">LinkedIn</h2>
-                      <p class="my-2 text-gray-500 dark:text-gray-400">Connect with me on the professional network.</p>
+                      <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">LinkedIn</h2>
+                      <p className="my-2 text-gray-500 dark:text-gray-400">Connect with me on the professional network.</p>
                       <Link 
                           className="mt-2 text-blue-500 dark:text-blue-400"
                           href="https://www.linkedin.com/in/henry-robins-21831a9a/" 
@@ -194,30 +200,34 @@ export default function Home() {
 
                   <div>
                       <Link 
-                          href="mailto: henry.robins@yahoo.com" 
+                          href="mailto: henryrobins51@gmail.com" 
                           target="_blank">
                           <AiFillMail className="text-5xl hover:text-red-600 duration-300" />
                       </Link>
 
-                      <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Email</h2>
-                      <p class="my-2 text-gray-500 dark:text-gray-400">Send me an email.</p>
+                      <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">Email</h2>
+                      <p className="my-2 text-gray-500 dark:text-gray-400">Send me an email.</p>
                       <Link 
                           className="mt-2 text-blue-500 dark:text-blue-400"
-                          href="mailto: henry.robins@yahoo.com" 
+                          href="mailto: henryrobins51@gmail.com" 
                           target="_blank">
-                          henry.robins@yahoo.com
+                          henryrobins51@gmail.com
                       </Link>
                   </div>
 
                   <div>
                       <Link 
-                          href="" >
+                          href="tel:415-517-5494" >
                           <AiFillPhone className="text-5xl hover:text-red-600 duration-300" />
                       </Link>
 
-                      <h2 class="mt-4 text-lg font-medium text-gray-800 dark:text-white">Phone</h2>
-                      <p class="mt-2 text-gray-500 dark:text-gray-400">Give me a call or text.</p>
-                      <p class="mt-2 text-blue-500 dark:text-blue-400">+1 (415) 517-5494</p>
+                      <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">Phone</h2>
+                      <p className="my-2 text-gray-500 dark:text-gray-400">Give me a call or text.</p>
+                      <Link 
+                          className="text-blue-500 dark:text-blue-400"
+                          href="tel:415-517-5494" >
+                          +1 (415) 517-5494
+                      </Link>
                   </div>
               </div>
           </div>
@@ -225,18 +235,18 @@ export default function Home() {
 
       
 
-      <footer class="bg-white dark:bg-gray-900 m-4">
-          <div class="w-full max-w-screen-xl mx-auto md:py-8">
-              <div class="sm:flex sm:items-center sm:justify-between">
+      <footer className="bg-white dark:bg-gray-900 m-4">
+          <div className="w-full max-w-screen-xl mx-auto md:py-8">
+              <div className="sm:flex sm:items-center sm:justify-between">
                   <span className="text-sm font-semibold dark:text-gray-400">Robins Video Editing</span>
-                  <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                  <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                       <li>
                           <a href="#home" ><AiOutlineArrowUp className="text-3xl hover:text-red-600 duration-300" /></a>
                       </li>
                   </ul>
               </div>
-              <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-              <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#home" class="hover:underline">Henry Robins Video Editing</a>. All Rights Reserved.</span>
+              <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+              <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="#home" className="hover:underline">Henry Robins Video Editing</a>. All Rights Reserved.</span>
           </div>
       </footer>
 
