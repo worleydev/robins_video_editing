@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillMail, AiFillLinkedin, AiFillYoutube, AiFillPhone, AiOutlineArrowUp} from "react-icons/ai"
+import {AiFillMail, AiFillLinkedin, AiFillYoutube, AiFillPhone, AiOutlineArrowUp, AiFillInstagram} from "react-icons/ai"
 import Image from "next/image"
 import Link from 'next/link'
 import headhshot from "../public/henry_robins_headshot.png"
@@ -40,9 +40,9 @@ export default function Home() {
           <div className="text-5xl flex justify-center gap-16 py-3 dark:text-gray-400" >
             <Link 
               className="hover:text-red-600 duration-300" 
-              href="https://www.linkedin.com/in/henry-robins-21831a9a/" 
+              href="https://www.instagram.com/robinsh96/" 
               target="_blank">
-              <AiFillLinkedin />
+              <AiFillInstagram />
             </Link>
             <Link
               className="hover:text-red-600 duration-300" 
@@ -73,7 +73,7 @@ export default function Home() {
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
               <iframe
-                  src="https://www.youtube.com/embed/uC8vTL3wQjw"
+                  src="https://www.youtube.com/embed/u5P54Kds294"
                   width={"100%"}
                   height={"350"}
                   frameBorder="0"
@@ -83,7 +83,7 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
               <iframe
-                  src="https://www.youtube.com/embed/LEQqxJPPHZc"
+                  src="https://www.youtube.com/embed/nDKkSi1qd0k"
                   width={"100%"}
                   height={"350"}
                   frameBorder="0"
@@ -184,17 +184,17 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3 dark:text-gray-400">
                   <div>
                       <Link 
-                          href="https://www.linkedin.com/in/henry-robins-21831a9a/" 
+                          href="https://www.instagram.com/robinsh96/" 
                           target="_blank">
-                          <AiFillLinkedin className="text-5xl hover:text-red-600 duration-300" />
+                          <AiFillInstagram className="text-5xl hover:text-red-600 duration-300" />
                       </Link>
-                      <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">LinkedIn</h2>
-                      <p className="my-2 text-gray-500 dark:text-gray-400">Connect with me on the professional network.</p>
+                      <h2 className="mt-4 text-lg font-medium text-gray-800 dark:text-white">Instagram</h2>
+                      <p className="my-2 text-gray-500 dark:text-gray-400">Connect with me on the social network.</p>
                       <Link 
                           className="mt-2 text-blue-500 dark:text-blue-400"
-                          href="https://www.linkedin.com/in/henry-robins-21831a9a/" 
+                          href="https://www.instagram.com/robinsh96/" 
                           target="_blank">
-                          https://www.linkedin.com/in/henry-robins-21831a9a/
+                          https://www.instagram.com/robinsh96/
                       </Link>
                   </div>
 
